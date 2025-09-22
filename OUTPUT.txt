@@ -1,0 +1,60 @@
+=== Task 1 ===
+Enter the number of child processes: 3
+Parent process PID: 10039, creating 3 child processes...
+Child 1: PID - 10061, Parent PID - 10039, Message - Hello from child 1
+Child 2: PID - 10064, Parent PID - 10039, Message - Hello from child 2
+Child 3: PID - 10065, Parent PID - 10039, Message - Hello from child 3
+Parent: Child with PID = 10064 finished with status 0
+Parent: Child with PID = 10065 finished with status 0
+Parent: Child with PID = 10061 finished with status 0
+
+=== Task 2 ===
+Enter the number of child processes: 4
+Enter the Linux command to execute (e.g., 'ls -l'): ls
+[Parent] PID=13071, creating 4 children to run ls
+[Child 1] PID=130136, Parent PID=13071, executing command: ls
+Desktop even.py forky.py Pictures Videos
+Documents fork1.py Music Public
+Downloads fork2.py os.alltasks.submission Templates
+[Child 2] PID=130137, Parent PID=13071, executing command: ls
+Desktop even.py forky.py Pictures Videos
+Documents fork1.py Music Public
+Downloads fork2.py os.alltasks.submission Templates
+[Child 3] PID=130138, Parent PID=13071, executing command: ls
+Desktop even.py forky.py Pictures Videos
+Documents fork1.py Music Public
+Downloads fork2.py os.alltasks.submission Templates
+[Child 4] PID=130139, Parent PID=13071, executing command: ls
+Desktop even.py forky.py Pictures Videos
+Documents fork1.py Music Public
+Downloads fork2.py os.alltasks.submission Templates
+[Parent] Child PID=130136 exited with status 0
+[Parent] Child PID=130137 exited with status 0
+[Parent] Child PID=130138 exited with status 0
+[Parent] Child PID=130139 exited with status 0
+
+=== Task 3 ===
+--- Task 3: Zombie & Orphan Processes ---
+1. Zombie process demo
+2. Orphan process demo
+Enter choice: 1
+[Parent] PID=1999, created child PID=1990
+[Parent] Not calling wait(), sleeping... Run 'ps -el | grep defunct' to see zombie.
+[Child] PID=1990, Parent PID=1999 -> Exiting now.
+
+=== Task 4 ===
+Enter PID to inspect: 8165
+Process Name: systemd-udevd
+Process State: S (sleeping)
+Memory Usage: 35684 kB
+Executable: /usr/lib/systemd/systemd-udevd
+Open FDs:
+  FD 0 -> /dev/null
+  FD 1 -> /dev/null
+  FD 2 -> /dev/null
+
+=== Task 5 ===
+PID=76595 | Requested nice=0 | Actual nice=0 | Iterations=12943442
+PID=76596 | Requested nice=5 | Actual nice=5 | Iterations=9208200
+PID=76597 | Requested nice=10 | Actual nice=10 | Iterations=3130143
+PID=76598 | Requested nice=15 | Actual nice=15 | Iterations=1647727
